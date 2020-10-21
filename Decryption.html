@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>TIBCO  {#!} password decoder and encoder</title>
+<script>
+function decode() {
+  var s = document.form1.encodedtxt.value;
+  document.form1.decodedtxt.value=r;
+  return result;
+  
+}
+function encode() {
+  var s = document.form1.decodedtxt.value;
+  document.form1.decodedtxt.value=r;
+  return result;
+  
+}
+</script>
+<style><!--
+  body { font:12pt "Trebuchet MS",arial,sans-serif; }
+  .smaller { font-size:9pt; }
+//--></style>
+</head>
+<body>
+<form id="form1" name="form1">
+ <h3>TIBCO  {#!} password decoder and encoder</h3>
+ <p>encoded string: <input id="encodedtxt" type="text" value="{xor}CDo9Hgw=" size="30">
+ <button onclick="javascript:decode(); return false;">decode &rarr;</button>
+   &nbsp; 
+  <button onclick="javascript:encode(); return false;">&larr; encode</button>
+ decoded string: <input id="decodedtxt" type="text" value="" size="30">
+ 
+ <p>&nbsp;</p>
+ </form>
+</body>
+</html>
